@@ -1,17 +1,17 @@
 import React, {useState, Fragment, useCallback} from "react";
 import "./shampoo-item.scss";
 
-const findUnique = arr => {
-  let result = [];
-
-  for (let str of arr) {
-    if (!result.includes(str)) {
-      result.push(str);
-    }
-  }
-
-  return result;
-};
+// const findUnique = arr => {
+//   let result = [];
+//
+//   for (let str of arr) {
+//     if (!result.includes(str)) {
+//       result.push(str);
+//     }
+//   }
+//
+//   return result;
+// };
 
 const Volumes = ({variants: {volume}, id, onVolumeSelect, currentVolume}) => {
   return (
@@ -22,22 +22,20 @@ const Volumes = ({variants: {volume}, id, onVolumeSelect, currentVolume}) => {
   );
 };
 
-const Select = ({items}) => {
-  const [toggledActive, setToggledActive] = useState(null);
-  const onActive = () => {
-    setToggledActive(prev => !prev);
-  };
-
+const Select = () => {
+  const variants = ['black', 'read', 'green', 'yellow', 'white'];
+  const [selectColor, setSelectColor] = useState(null);
+  const onSelect = selected => setSelectColor(selected);
   return (
-    <div className={`select${toggledActive ? ' active' : ''}`} >
-          <span className={`select__item select__title`}
-                onClick={onActive}>Выберите цвет</span>
+    <div className={`select`} >
+          <span className={`select__item select__title`} >{selectColor ? selectColor : 'Выберите цвет'}</span>
       <div className={'select__list'}>
         {
-          findUnique(items.map(item => item.color))
-            .map(item => (
+          // findUnique(items.map(item => item.color))
+            variants.map(item => (
               <span className={'select__item select__list-item'}
-                    key={item}>
+                    key={item}
+                    onClick={() => onSelect(item)}>
                     {item}
               </span>
             ))
