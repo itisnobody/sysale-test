@@ -1,1 +1,15 @@
+.shampoo-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -.5rem;
+  @media screen and (max-width: 1130px) {
+    justify-content: center;
+  }
+}
 
+.shampoo-list__item {
+  flex: 1 1 30%;
+  max-width: 48%;
+  margin: .5rem;
+}
