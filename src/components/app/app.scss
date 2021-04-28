@@ -12,4 +12,10 @@
   flex: 1 1 30%;
   max-width: 48%;
   margin: .5rem;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 }

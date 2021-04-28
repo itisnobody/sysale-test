@@ -27,8 +27,8 @@ export default class ShampooService {
           inventory: 9
         }],
       images: [
-        'sysale-test/img/1/image23.jpg',
-        'sysale-test/img/1/image24.jpg'
+        'img/1/image23.jpg',
+        'img/1/image24.jpg'
       ]
     },
     {
@@ -58,8 +58,8 @@ export default class ShampooService {
           inventory: 9
         }],
       images: [
-        'sysale-test/img/2/image23.jpg',
-        'sysale-test/img/2/image24.jpg'
+        'img/2/image23.jpg',
+        'img/2/image24.jpg'
       ]
     },
     {
@@ -89,8 +89,8 @@ export default class ShampooService {
           inventory: 9
         }],
       images: [
-        'sysale-test/img/3/image23.jpg',
-        'sysale-test/img/3/image24.jpg'
+        'img/3/image23.jpg',
+        'img/3/image24.jpg'
       ]
     }
   ];
