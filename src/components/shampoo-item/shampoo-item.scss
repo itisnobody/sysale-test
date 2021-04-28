@@ -100,6 +100,8 @@
 
 .select__list {
   display: none;
+  overflow-y: scroll;
+  max-height: 8em;
 }
 
 .select__list-item {
@@ -116,6 +118,7 @@
 .select__item {
   display: block;
   color: #2C2C2C;
+  background-color: #fff;
   position: relative;
   z-index: 2;
   transition: all .1s;
