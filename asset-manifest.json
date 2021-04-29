@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/sysale-test/static/css/main.cdd4ad5c.chunk.css",
+    "main.css": "/sysale-test/static/css/main.4b5d89de.chunk.css",
     "main.js": "/sysale-test/static/js/main.52ee4d55.chunk.js",
     "main.js.map": "/sysale-test/static/js/main.52ee4d55.chunk.js.map",
     "runtime-main.js": "/sysale-test/static/js/runtime-main.d2414d0b.js",
@@ -10,7 +10,7 @@
     "static/js/2.d738413f.chunk.js.map": "/sysale-test/static/js/2.d738413f.chunk.js.map",
     "index.html": "/sysale-test/index.html",
     "static/css/2.679831fc.chunk.css.map": "/sysale-test/static/css/2.679831fc.chunk.css.map",
-    "static/css/main.cdd4ad5c.chunk.css.map": "/sysale-test/static/css/main.cdd4ad5c.chunk.css.map",
+    "static/css/main.4b5d89de.chunk.css.map": "/sysale-test/static/css/main.4b5d89de.chunk.css.map",
     "static/js/2.d738413f.chunk.js.LICENSE.txt": "/sysale-test/static/js/2.d738413f.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/sysale-test/static/media/SFUIText-SemiboldItalic.e39b6bb5.ttf",
     "static/media/shampoo-item.scss": "/sysale-test/static/media/libra.4299a7ee.svg"
@@ -19,7 +19,7 @@
     "static/js/runtime-main.d2414d0b.js",
     "static/css/2.679831fc.chunk.css",
     "static/js/2.d738413f.chunk.js",
-    "static/css/main.cdd4ad5c.chunk.css",
+    "static/css/main.4b5d89de.chunk.css",
     "static/js/main.52ee4d55.chunk.js"
   ]
 }
