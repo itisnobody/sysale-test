@@ -14,18 +14,6 @@
   }
 }
 
-.list-item__img {
-  width: 260px;
-  height: 260px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  background: #fff;
-  filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.05));
-  border-radius: 25px;
-}
-
 .list-item__title {
   font-family: SF UI Display;
   font-style: normal;
@@ -51,81 +39,6 @@
   justify-content: space-between;
 }
 
-.select {
-  width: 50%;
-  background: #FFFFFF;
-  border-radius: 15px;
-  color: #2C2C2C;
-  font-family: SF UI Display;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.2em;
-  margin-bottom: 1rem;
-  position: relative;
-  overflow: hidden;
-
-  &:after {
-    content: ">";
-    display: inline-block;
-    position: absolute;
-    z-index: 2;
-    top: 8px;
-    right: 8px;
-    transition: all .1s;
-  }
-
-  &:hover {
-    overflow: visible;
-    &:after {
-      transform: rotate(90deg);
-    }
-    .select__list {
-      display: block;
-    }
-  }
-}
-
-.select__title {
-  padding: 8px 20px;
-  border-radius: 15px 15px 0 0;
-}
-
-.select__list {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  background: inherit;
-  display: none;
-  overflow-y: scroll;
-  max-height: 5.6em;
-  border-radius: 0 0 15px 15px;
-}
-
-.select__list-item {
-  padding: 4px 8px 4px 20px;
-  margin-right: 17px;
-  cursor: pointer;
-
-  &:hover {
-    background: #F3F8FC;
-    border-radius: 0px 10px 10px 0px;
-  }
-}
-
-.select__item {
-  display: block;
-  color: #2C2C2C;
-  background-color: #fff;
-  position: relative;
-  z-index: 2;
-  transition: all .1s;
-}
-
-
-
 .list-item__price {
   margin-left: auto;
   font-family: SF UI Display;
@@ -134,58 +47,6 @@
   font-size: 1.125rem;
   line-height: 1.3125rem;
   color: #000000;
-}
-
-.form-radio {
-  margin-bottom: 1.625rem;
-  padding: 0 28px;
-  width: 100%;
-
-    input[type=radio] {
-      display: none;
-    }
-
-    label {
-      display: inline-block;
-      cursor: pointer;
-      position: relative;
-      padding-left: 36px;
-      margin-right: 0;
-      line-height: 23px;
-      user-select: none;
-
-      &:before,
-      &:after {
-        content: "";
-        display: inline-block;
-        position: absolute;
-        border-radius: 5px;
-      }
-
-      &:before {
-        width: 23px;
-        height: 23px;
-        left: 0px;
-        bottom: 0px;
-        background: #DEDEDE;
-      }
-    }
-
-    input[type=radio]:checked + label:after {
-      width: 17px;
-      height: 17px;
-      left: 3px;
-      bottom: 3px;
-      background: linear-gradient(261.65deg, #EFBB37 -3.95%, #CF9E1F 109.44%);
-    }
-
-    label:hover:before {
-      filter: brightness(90%);
-    }
-
-    input[type=radio]:disabled + label:before {
-      filter: grayscale(100%);
-    }
 }
 
 .btn-group {
@@ -243,7 +104,6 @@
       background: linear-gradient(261.65deg, #FFD773 -3.95%, #E2B645 109.44%);
     }
   }
-
 }
 
 .pills {

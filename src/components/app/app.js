@@ -6,16 +6,16 @@ import { shampooRequested, shampooLoaded, shampooError } from "../actions"
 import { ServiceContext } from "../context";
 import ErrorIndicator from "../error-indicator";
 import Spinner from "../spinner";
-import ShampooItem from "../shampoo-item/shampoo-item";
+import ShampooItem from "../shampoo-item";
 
 const ShampooList = ({shampoos}) => (
   <div className={'shampoo-list'}>
     {
-      shampoos.map(shampoo => {
+      shampoos.map(item => {
         return (
           <div className={'shampoo-list__item'}
-               key={shampoo.id}>
-            <ShampooItem item={shampoo} />
+               key={item.id}>
+            <ShampooItem item={item} />
           </div>
         );
       })
